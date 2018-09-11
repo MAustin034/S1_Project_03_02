@@ -1,0 +1,123 @@
+﻿@charset "utf-8";
+
+/* Set the charset to utf-8. */
+/* Filled in the information in the blanks */
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 2
+   
+   Bike the Mountains Tour Style Sheet
+   Author: Mickal Austin
+   Date:   09/10/18
+   
+   Filename: mw_styles.css
+*/
+/* Structural Styles */
+/* Put CSS rules to effect the html tag, body tag, footer tag nested in a body tag, and the address tag. The html rule changes the background color of the whole page. The body rule changes the Background color and th font. The body footer rule changes the background color, and the top and bottom padding. The address rule changes the font weight to normal, the font size to 0.9em, aligned the text center, and changed the top and bottom padding to 5px. */
+html {
+    background-color: rgb(173, 189, 227);
+}
+
+body {
+    background-color: rgb(227, 210, 173);
+    font-family: ‘Century Gothic’, sans-serif;
+}
+
+body footer {
+    background-color: rgb(208, 184, 109);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+address {
+    font-weight: normal;
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Heading Styles */
+/* Set the font weight of h1 and h2 tags to normal. */
+h1,
+h2 {
+    font-weight: normal;
+}
+
+/* Navigation Styles */
+/* Set up the navigation list, removed the underline, and made it so when you hover over the link it changes color. */
+nav>ul {
+    list-style-type: none;
+    line-height: 2em;
+    font-size: 0.9em;
+}
+
+nav a:visited,
+nav a:link {
+    text-decoration: none;
+    color: rgb(43, 59, 125);
+}
+
+nav a:hover,
+nav a:active {
+    color: rgb(212, 35, 35);
+}
+
+/* Article Styles */
+/* Set up the article tag. made each of the h1 tags have a font size of 2.2em and letter spacing of 0.2em. then set the paragraph font size to 1.1em. since i didn't know how to set up the pseduo classes correctly, to make sure that the website look right, i used a div with and ID and changed that css rule. */
+article#tour_summary h1 {
+    font-size: 2.2em;
+    letter-spacing: 0.2em;
+}
+
+article#tour_summary p {
+    font-size: 1.1em;
+}
+
+/* article#tour_summary p:first-of-type p::first-line {
+    font-size: 1.2em;
+    font-variant: small-caps;
+} */
+article#tour_summary div#scl {
+    font-size: 1.2em;
+    font-variant: small-caps;
+}
+
+/* Aside Styles */
+/* Set up the the aside. Used ID and pseduo classes. Set the h1 tag to have a font size of 1.2em, and h2 tag to have a font size of 0.8em. Then had each day alternate color. */
+aside#tour_itinerary h1 {
+    font-size: 1.2em;
+}
+
+aside#tour_itinerary h2 {
+    font-size: 0.8em;
+}
+
+aside#tour_itinerary h2:nth-of-type(odd),
+aside#tour_itinerary p:nth-of-type(odd) {
+    color: rgb(79, 91, 40);
+}
+
+aside#tour_itinerary h2:nth-of-type(even),
+aside#tour_itinerary p:nth-of-type(even) {
+    color: rgb(81, 95, 175);
+}
+
+/* Blockquote Styles */
+/* set up the blockquote to have a background color, and changed the font color. Then changed the padding for the paragraph nested in the blockquote. */
+blockquote {
+    background-color: rgb(173, 189, 227);
+    color: rgba(255, 255, 255, 0.65);
+}
+
+blockquote p {
+    padding: 2.5px 10px;
+}
+
+/* blockquote p {
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+} */
